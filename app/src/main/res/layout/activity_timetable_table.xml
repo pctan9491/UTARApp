@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TimetableTableActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TIMETABLE TABLE"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#1C2333"
+        android:textColor="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/search_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by subject code or venue"
+        android:padding="16dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:textColorHint="#808080"
+        android:inputType="text"
+        android:imeOptions="actionSearch" />
+
+    <HorizontalScrollView
+        android:id="@+id/timetable_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:id="@+id/timetable_table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </HorizontalScrollView>
+
+</LinearLayout>

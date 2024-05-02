@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AssignmentTaskSubject">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assignment Task"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#3F51B5"
+        android:textColor="#FFFFFF" />
+
+        <LinearLayout
+            android:id="@+id/subject_ass_view"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="#1C2333"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="UCCD2002"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Introduction to Information Technology"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+</LinearLayout>

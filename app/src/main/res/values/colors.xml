@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="all">#000817</color>
+    <color name="all_pressed">#4F0000</color>
+    <color name="mond">#003761</color>
+    <color name="mond_pressed">#4F0000</color>
+    <color name="tues">#0177D1</color>
+    <color name="tues_pressed">#4F0000</color>
+    <color name="wed">#003761</color>
+    <color name="wed_pressed">#4F0000</color>
+    <color name="thur">#0177D1</color>
+    <color name="thur_pressed">#4F0000</color>
+    <color name="fri">#003761</color>
+    <color name="fri_pressed">#4F0000</color>
+    <color name="sat">#0177D1</color>
+    <color name="sat_pressed">#4F0000</color>
+    <color name="red">#E87272</color>
+    <color name="present">#009688</color>
+</resources>

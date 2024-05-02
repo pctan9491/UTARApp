@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <!--https://github.com/codepath/android_guides/wiki/Fragment-Navigation-Drawer-->
+        <item
+            android:id="@+id/nav_first_fragment"
+            android:title="Assignment Task"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_second_fragment"
+            android:title="Timetable"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_third_fragment"
+            android:title="UTAR Portal"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_forth_fragment"
+            android:title="Course Registration"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_fifth_fragment"
+            android:title="UTAR Map (Kampar Campus)"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_sixth_fragment"
+            android:title="Exam Result"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_seventh_fragment"
+            android:title="UTAR Email"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_eighth_fragment"
+            android:title="UTAR Official Page"
+            android:textStyle="bold"/>
+        <item
+            android:id="@+id/nav_ninth_fragment"
+            android:title="Assignment Management"
+            android:textStyle="bold"/>
+    </group>
+</menu>

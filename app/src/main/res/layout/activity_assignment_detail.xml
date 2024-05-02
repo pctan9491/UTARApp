@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AssignmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/assignmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1C2333"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:gravity="center"
+            android:text="Assignment 1"/>
+
+        <TextView
+            android:id="@+id/assignmentDueDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1C2333"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="31/7/2023"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:text="Description:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/assignmentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:paddingTop="8dp"
+            android:paddingLeft="8dp"
+            android:text="Notification 1 Content"/>
+
+        <GridLayout
+            android:id="@+id/photosAssignmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:paddingTop="8dp">
+            <!-- Images will be added here dynamically -->
+        </GridLayout>
+
+        <LinearLayout
+            android:id="@+id/filesAssignmentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="8dp">
+            <!-- Files will be added here dynamically -->
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Like"
+            android:background="#1C2333"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/likeCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0 Likes"
+            android:paddingLeft="8dp"/>
+
+        <EditText
+            android:id="@+id/commentInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#616161"
+            android:textColor="@color/black"
+            android:hint="Add a comment..." />
+
+        <Button
+            android:id="@+id/postCommentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Comment"
+            android:background="#1C2333"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- A RecyclerView can be used to display comments dynamically -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/commentsRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>

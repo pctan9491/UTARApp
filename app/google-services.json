@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "331019317153",
+    "project_id": "utarapp-9f3db",
+    "storage_bucket": "utarapp-9f3db.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331019317153:android:5c540b315ccdc55a9da5e0",
+        "android_client_info": {
+          "package_name": "com.example.utarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331019317153-35clds7tsncb3ppgo05r3a211srp2hnj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApww7dU872dxlffY0qNLZCExJbi0kS5K4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "331019317153-35clds7tsncb3ppgo05r3a211srp2hnj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

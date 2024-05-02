@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UTARApp</string>
+    <string name="prompt_select_week">Select the week</string>
+    <string name="assignment_channel">assignment_channel_id</string>
+    <string name="channel_name">Assignment Updates</string>
+    <string name="channel_description">Notifications for new assignments</string>
+
+</resources>

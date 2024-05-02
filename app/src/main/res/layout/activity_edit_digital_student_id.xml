@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".digitalStudentId">
+
+    <!-- Your main content inside ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:background="#1C2333">
+
+        <TextView
+            android:layout_width="293dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="CHANGE..."
+            android:textAlignment="center"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_id_photo"
+        android:layout_width="match_parent"
+        android:layout_height="311dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/digital_student_id_rounded_square"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:fontFamily="sans-serif-black"
+                android:text="STUDENT ID PHOTO"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_id_photo"
+                android:layout_width="207dp"
+                android:layout_height="203dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"/>
+
+            <Button
+                android:id="@+id/upload_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Upload"
+                android:background="@drawable/login_btn"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_stud_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/digital_student_id_rounded_square"
+        android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="129dp"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/studentName"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:text="Test Name"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Student ID: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/studentId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test Student ID"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Course: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/studentCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Test Student Course"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Expiry Date: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:id="@+id/studentExpiryDate"
+                        android:layout_width="223dp"
+                        android:layout_height="wrap_content"
+                        android:text="Test Expiry Date"
+                        android:textColor="#050505"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Address: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <EditText
+                        android:id="@+id/editStudentEmailAddress"
+                        android:layout_width="223dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Email Address"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number: "
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <EditText
+                        android:id="@+id/editStudentPhoneNumber"
+                        android:layout_width="223dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Enter Phone Number"
+                        android:textColor="#000000"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="20dp"/>
+
+
+                    <Button
+                        android:id="@+id/submit_edit_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:background="#1C2333"
+                        android:padding="10dp"
+                        android:textColor="@color/white"/>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/loadingAnimation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:background="#AA000000"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_animation"/>
+</FrameLayout>

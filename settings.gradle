@@ -1,0 +1,10 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()
+        // Add other repositories if needed
+    }
+}
+rootProject.name = "UTARApp"
+include ':app'

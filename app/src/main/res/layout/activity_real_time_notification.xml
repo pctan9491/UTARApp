@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RealTimeNotification">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTIFICATION"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#1C2333"
+        android:textColor="#FFFFFF" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1C2333"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Notification Title"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Posted By"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textStyle="bold"
+                android:padding="8dp"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@drawable/button_bg">
+
+        <Button
+            android:id="@+id/sortByTitleAscBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort by Title (Asc)"
+            android:textSize="12sp"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/sortByTitleDescBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort by Title (Desc)"
+            android:textSize="12sp"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/sortByDateAscBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort by Date (Asc)"
+            android:textSize="12sp"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/sortByDateDescBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Sort by Date (Desc)"
+            android:textSize="12sp"
+            android:background="@drawable/button_bg"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/dynamicTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <!-- TODO: More TableRows for each notification -->
+        <TableRow
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_btn"
+            android:elevation="4dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Notification 1"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Admin"
+                android:textColor="#000000" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="2023-07-31"
+                android:padding="8dp"
+                android:textColor="#000000" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

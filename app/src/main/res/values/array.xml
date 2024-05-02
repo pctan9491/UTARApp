@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string-array name="weeks" android:textColor="#FFFFFF">
+        <item>Week 1</item>
+        <item>Week 2</item>
+        <item>Week 3</item>
+    </string-array>
+</resources>
